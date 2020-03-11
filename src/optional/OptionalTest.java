@@ -27,7 +27,7 @@ public class OptionalTest {
       cities 의 4번째 값이 null이면 Optional.empty 반환, null이 아니면 Optional.[value] 반환
       값이 있으면 length 반환, 없으면 0 반환
     */
-    final Optional < String > maybeCity = Optional.ofNullable(cities.get(4)); // Optional
+    final Optional < String > maybeCity = Optional.ofNullable(cities.get(3)); // Optional
     System.out.println(maybeCity);
     final int length = maybeCity.map(String::length).orElse(0); // null-safe
     System.out.println("length: " + length);
